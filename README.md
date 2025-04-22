@@ -8,7 +8,7 @@ In this assignment, you will:
 * Download and process genomic data
 * Use basic bash commands for bioinformatics file handling
 
-#  Part 1: Setup and Data Acquisition
+##  Part 1: Setup and Data Acquisition
 
 # Step 1: Log into the Palmetto2 cluster
 Open your web browser and navigate to https://ondemand.rcd.clemson.edu/
@@ -80,13 +80,13 @@ grep "^>" Homo_sapiens.GRCh38.dna.primary_assembly.fa | head -5
 echo -e "\nFirst 5 sequences in the cDNA:"
 grep "^>" Homo_sapiens.GRCh38.cdna.all.fa | head -5
 ```
-# Part 2: Questions for Reflection
+## Part 2: Questions for Reflection
 * Why is it important to work in the scratch space rather than your home directory when dealing with large genomic files?
 * What is the difference between the primary assembly genome and the cDNA files you downloaded?
 * Approximately how much disk space did each file take before and after decompression?
 * What pattern does the grep "^>" command search for, and why is this effective for counting FASTA sequences?
 
-# Part 3: Generative AI Prompts
+## Part 3: Generative AI Prompts
 # Prompt 1: File Compression in Bioinformatics
 ```
 I'm working with large genomic datasets and need to understand file compression better. Could you explain:
