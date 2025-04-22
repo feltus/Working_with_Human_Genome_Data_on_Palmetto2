@@ -8,14 +8,14 @@ In this assignment, you will:
 * Download and process genomic data
 * Use basic bash commands for bioinformatics file handling
 
-##  Part 1: Setup and Data Acquisition
+#  Part 1: Setup and Data Acquisition
 
-# Step 1: Log into the Palmetto2 cluster
+## Step 1: Log into the Palmetto2 cluster
 Open your web browser and navigate to https://ondemand.rcd.clemson.edu/
 Enter your university credentials
 Complete the two-factor authentication if prompted
 
-# Step 2: Request an interactive Jupyter notebook session
+## Step 2: Request an interactive Jupyter notebook session
 From the dashboard, click on "Interactive Apps" in the top menu
 Select "Jupyter Notebook" from the dropdown menu
 Configure your session with the following resources:
@@ -26,11 +26,11 @@ Partition: Select an appropriate partition (e.g., Intel, check availability)
 QOS: regular
 Click "Launch" and wait for your job to start
 
-# Step 3: Start a terminal session
+## Step 3: Start a terminal session
 Once your Jupyter session launches, click on "New" in the top right corner
 Select "Terminal" from the dropdown menu
 
-# Step 4: Create a working directory in scratch space
+## Step 4: Create a working directory in scratch space
 ```
 # Navigate to your scratch space
 cd /scratch/`whoami`
@@ -42,7 +42,7 @@ mkdir human_genome_analysis
 cd human_genome_analysis
 ```
 
-# Step 5: Download the human genome and cDNA gene set from ENSEMBL
+## Step 5: Download the human genome and cDNA gene set from ENSEMBL
 
 ```
 # Download the human genome (GRCh38)
@@ -52,7 +52,7 @@ wget https://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/dna/Homo_sapiens
 wget https://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz
 ```
 
-# Step 6: Uncompress the files
+## Step 6: Uncompress the files
 
 ```
 # Uncompress the genome file
@@ -62,7 +62,7 @@ gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
 gunzip Homo_sapiens.GRCh38.cdna.all.fa.gz
 ```
 
-# Step 7: Count the sequences in FASTA format
+## Step 7: Count the sequences in FASTA format
 
 ```
 # Count sequences in the genome file
@@ -80,14 +80,14 @@ grep "^>" Homo_sapiens.GRCh38.dna.primary_assembly.fa | head -5
 echo -e "\nFirst 5 sequences in the cDNA:"
 grep "^>" Homo_sapiens.GRCh38.cdna.all.fa | head -5
 ```
-## Part 2: Questions for Reflection
+# Part 2: Questions for Reflection
 * Why is it important to work in the scratch space rather than your home directory when dealing with large genomic files?
 * What is the difference between the primary assembly genome and the cDNA files you downloaded?
 * Approximately how much disk space did each file take before and after decompression?
 * What pattern does the grep "^>" command search for, and why is this effective for counting FASTA sequences?
 
-## Part 3: Generative AI Prompts
-# Prompt 1: File Compression in Bioinformatics
+# Part 3: Generative AI Prompts
+## Prompt 1: File Compression in Bioinformatics
 ```
 I'm working with large genomic datasets and need to understand file compression better. Could you explain:
 1. The differences between common compression formats used in bioinformatics (.gz, .zip, .bz2, .xz)
@@ -97,7 +97,7 @@ I'm working with large genomic datasets and need to understand file compression 
 5. Best practices for compression when sharing genomic data with collaborators"
 ```
 
-# Prompt 2: Understanding FASTA and Common Sequence Formats
+## Prompt 2: Understanding FASTA and Common Sequence Formats
 
 ```
 "I'm learning about different sequence file formats in bioinformatics. Could you provide a comprehensive explanation of:
