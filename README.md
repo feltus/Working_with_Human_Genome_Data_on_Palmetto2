@@ -108,7 +108,5 @@ I'm working with large genomic datasets and need to understand file compression 
 5. When each format is most appropriate in a typical NGS analysis pipeline
 Please include examples of what each format looks like and explain the biological information each one captures."
 ```
-A summary (300-500 words) of what you learned from the generative AI responses to the prompts
-Due date: See syllabus.
 
 Note: Make sure to clean up your workspace when you're done by deleting the large files from scratch space.
