@@ -1,6 +1,6 @@
 # Working_with_Human_Genome_Data_on_Palmetto2
 
-# Computational Lab: Working with Human Genome Data on a Linux Cluster.
+# Computational Practice: Working with Human Genome Data on a Linux Cluster.
 
 # Overview
 In this lab, you will obtain and process human genome files on the Palmetto2 HPC cluster.  Using a remote, high-performance computer is the best way to process huge genomics datasets that will not fit on your laptop.  When you log in to the cluster, you will enter a "bash shell" enivironment that allows you to enter Linux comands (e.g. ls, pwd, mkdir, etc.) that are then executed by the Linux operating system (OS).  By performing real bioinformatics tasks on real genomics data, you will gain experience using Linux to solve complex computational biology problems.  It takes years to get good at this, and the more effort you put into learning the technical langauge of bash, the better scientist you will become :).  
@@ -11,7 +11,9 @@ In this lab, you will obtain and process human genome files on the Palmetto2 HPC
 * Download and process genomic data
 * Use basic bash commands for bioinformatics file handling
 
-#  Part 1: Setup and Data Acquisition
+# Instructions
+
+# Setup and Data Acquisition
 
 ## Step 1: Log into the Palmetto2 cluster
 Open your web browser and navigate to https://ondemand.rcd.clemson.edu/
@@ -81,13 +83,13 @@ grep "^>" Homo_sapiens.GRCh38.dna.primary_assembly.fa | head -5
 echo -e "\nFirst 5 sequences in the cDNA:"
 grep "^>" Homo_sapiens.GRCh38.cdna.all.fa | head -5
 ```
-# Part 2: Questions for Reflection
+# Questions for Reflection
 * Why is it important to work in the scratch space rather than your home directory when dealing with large genomic files?
 * What is the difference between the primary assembly genome and the cDNA files you downloaded?
 * Approximately how much disk space did each file take before and after decompression?
 * What pattern does the grep "^>" command search for, and why is this effective for counting FASTA sequences?
 
-# Part 3: Generative AI Prompts
+# Generative AI Prompts For a Deeper Dive
 ## Prompt 1: File Compression in Bioinformatics
 ```
 I'm working with large genomic datasets and need to understand file compression better. Could you explain:
