@@ -1,8 +1,11 @@
 # Working_with_Human_Genome_Data_on_Palmetto2
 
-# Objectives
-In this assignment, you will:
+# Computational Lab: Working with Human Genome Data on a Linux Cluster.
 
+# Overview
+In this lab, you will obtain and process human genome files on the Palmetto2 HPC cluster.  Using a remote, high-performance computer is the best way to process huge genomics datasets that will not fit on your laptop.  When you log in to the cluster, you will enter a "bash shell" enivironment that allows you to enter Linux comands (e.g. ls, pwd, mkdir, etc.) that are then executed by the Linux operating system (OS).  By performing real bioinformatics tasks on real genomics data, you will gain experience using Linux to solve complex computational biology problems.  It takes years to get good at this, and the more effort you put into learning the technical langauge of bash, the better scientist you will become :).  
+
+# Learning Objectives
 * Access a high-performance computing environment
 * Set up a proper working directory
 * Download and process genomic data
@@ -53,7 +56,6 @@ wget https://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/cdna/Homo_sapien
 ```
 
 ## Step 6: Uncompress the files
-
 ```
 # Uncompress the genome file
 gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
@@ -63,7 +65,6 @@ gunzip Homo_sapiens.GRCh38.cdna.all.fa.gz
 ```
 
 ## Step 7: Count the sequences in FASTA format
-
 ```
 # Count sequences in the genome file
 echo "Number of sequences in the genome:"
@@ -98,7 +99,6 @@ I'm working with large genomic datasets and need to understand file compression 
 ```
 
 ## Prompt 2: Understanding FASTA and Common Sequence Formats
-
 ```
 "I'm learning about different sequence file formats in bioinformatics. Could you provide a comprehensive explanation of:
 1. The FASTA format - its structure, header conventions, and appropriate uses
